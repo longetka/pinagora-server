@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "pinagora-4db27",
+  "private_key_id": "9b509e64eaea66ea28a52d8932f730ec155c3086",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC2+uai+EIixTqg\n8QZSDCVwI9X79TU4uC5AI+Rdere+Ywvk8q0D8jeXXhnyueIOCLUsYgQVUYi9ix/b\n7zJKl2beUVQ4aK2QhN3yg8yEXMZhSZ9Us3H6DgC1QGP8BZ8m41iDC+wAASyNR+/v\ng58mzGU3wK6p8c5P/i2qKw+Q5FVG/tqeqxKAK4WfI1RqBJAzcSzOKA+4lbpy+Epu\n3JEFLyCrh9vXBmw+8N8/nI9kpF41pV8wbEPmbcQO38+6f7A5DiIO44kTdnnfAGkb\nP0adJOgWwkvWGK1apDjNlp1rm5bMc07UGWXqYO5kP1ahyIdJMgtYs5Wh27nixZZs\n8OHc5tCFAgMBAAECggEAOvExkDe2Xir4StW5On7NJIV2rbX8UewKggDN1Erum3ae\nYz7E+utweuMGKsk0B19ItSZRuGhOSvhg5+Dya1LAAUdjgNQ/bLlQIYnRPKYCBV7I\n42j2gx01ny1Bx/IrpURAw934RLwcFNqicJ4Oi1n2FPKNkRLiaaQwI4vBdOQIkFiG\nrr/DR2OTDSkkPZu9hINolS5FLGmkkSj2WGEBPuJnbEXDEDkWRj4Feveajm5cDRk5\nzra2ZW0yNOzPS6glfNpWxXX3ZYLXlGombDYQo6FSldK9HHFxb8c874kBtd+2t6cg\nAEm3SWA6XGpJYMivgCBPjeLhoGEIkd5kGf4dycGHNQKBgQDcyOFHOsqkrEe1nZVB\nFr363gCIX0TFLoVFwH5hfAjN5P+4XCBuu00nFw71lXBWMuLfvLVgsl4B8hl3E1/j\nBHRXMwahhcFY2AEtQOckLDBMXxr8Pttvbdsnufc/ZKBfxRe90+R1sDVBRq1HolHK\nCcj2b7pbYhmee32LARLMGqBHxwKBgQDUKmBhCsX+yGOTj3nI4dPKJCqOVmh7xov6\n+dN9HApw6dqLnyFUrLU+z1OCVRE/Oo/fEboZhAcg84t+iseOYPLzOuBTbI0WK83I\nzjlfKWXwVWCghSC43AfcTi53vJSw/c3TSmx1Rtk7b14DwYJmwKTCbI02Lv3XmyV8\nG2474sIdUwKBgQCJ/QLPge8k/IfU+qhOBei24glzMhfJJUomTiiuxNa72GP61Zlv\nm6CczcyLsNqFBUjGjSrPRKt8i9NemL1VJXORDFMYoIA3Bsm1ftr3wKZvFQHIpYCA\nJCjUq2XcOQgC0ywDeGtRItAl/AZQvyJfI752R14xvx5D7uqH9iPJbNrAAQKBgQCX\nyF08730oQeni9gDVMqHWejsrqyuCaU9ZVIL1fSsHDnX37vbkYc4kSiRfGEaHanjk\nyATQHkEPVMyV0ejjtf34/kTfycfBdcL5hndK2g4AesPu8m6vcVH6TMA3juT9HgWy\nxAqFeBMOzyR+IWEN64GzSf9YJRQau/Z8LA+Xrija2wKBgDp3irQKp34Rc1enoQH/\n+Elmn6eezLqpdx3DTzQPshE/Z1spW0gX5v1oqawoc/9f0P1HaH3fTr0iS0iPP5ob\nqMIe1n4ua4DWQ4Kde9G8u37O6puAhKbj4NkhmP/Pc3bPoLyzTu27ufQuKUbzpf2w\nHedeUsnAoTOtoHgN9wbpotuE\n-----END PRIVATE KEY-----\n",
+  "client_email": "denis-wd@pinagora-4db27.iam.gserviceaccount.com",
+  "client_id": "107740968519186450840",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/denis-wd%40pinagora-4db27.iam.gserviceaccount.com"
+}
