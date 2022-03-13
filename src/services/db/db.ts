@@ -7,10 +7,20 @@ class DataBase {
         this.collectionName = collectionName;
     }
 
-    public async add(object: Object) {
-        let docRef = db.collection(this.collectionName).doc();
+    public async addDoc(docName: any, object: Object) {
+        let docRef = db.collection(this.collectionName).doc(docName);
         await docRef.set(object);
     }
+
+    public async getDocByEmail(email: any): Promise<any> {
+        let userDoc = db.collection(this.collectionName).doc(email);
+        let doc = await userDoc.get();
+        if (!doc.exists) {
+            console.log('No such document!')
+        } else {
+            return doc.data();
+        }
+    }        
 };
 
 export default DataBase;

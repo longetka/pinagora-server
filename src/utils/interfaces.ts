@@ -1,12 +1,12 @@
-export interface IUserQuery {
+export type IUserQuery = {
     firstName: string;
     lastName: string;
     email: string;
     password: string;
-    confirPassword: string;
+    confirmPassword: string;
 };
 
-export interface IUser {
+export type IUser = {
     firstName: string;
     lastName: string;
     email: string;
