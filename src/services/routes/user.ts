@@ -7,10 +7,6 @@ import User from "../../utils/handlers/User";
 const userDB = new DataBase('users');
 
 class UserRoutes {
-    static test(req: Request, res: Response): void {
-        console.log(req.body);
-    }
-
     static async register(req: Request, res: Response): Promise<void> {
         console.log(req.body)
         let {firstName, lastName, email, password}: any = req.body;
@@ -34,20 +30,34 @@ class UserRoutes {
     }
 
     static async login(req: Request, res: Response): Promise<void> {
-        let {email, password}: any = req.query;
+        let {email, password}: any = req.body;
         let user = await User.findByEmail(email);
         if (!user) {
-            res.status(400).json('Пользователь не найден - Зарегистрируйтесь');
+            res.status(202).json('Пользователь не найден - Зарегистрируйтесь');
+        } 
+        let isMatch = await User.comparePassword(password, user.password);
+        if (!isMatch) {
+            res.status(202).json('Неверный пароль, попробуйте другой');
         } else {
-            let isMatch = User.comparePassword(password, user.password);
-            if (!isMatch) {
-                res.json('Неверный пароль, попробуйте другой');
-            }
-           
             let token = User.getToken(user.email);
-
             res.status(200).json({token, userId: user.email, user})
         }
+    }
+
+    static async getOneUser(req: Request, res: Response): Promise<void> {
+        let {userId}: any = req.body;
+        let user = await User.findByEmail(userId);
+        res.status(200).json({user});
+    }
+
+    static async update(req: Request, res: Response): Promise<void> {
+        let body: any = req.body;
+        let user = await User.findByEmail(body.userId);
+        //await User.updateUser(body.userId, {
+            //firstName: body.firstName,
+            //lastName: body.lastName
+        //});
+        res.json({user});
     }
 }
 

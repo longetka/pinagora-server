@@ -17,6 +17,10 @@ class User {
         }
     }
 
+    static async updateUser(email: string, ...data: any): Promise<void> {
+        await userDB.updateDoc(email, data);
+    }
+
     static async hashedPassword(password: string): Promise<string> {
         let hashedPassword = await bcrypt.hash(password, 10);
         return hashedPassword;

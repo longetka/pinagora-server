@@ -21,6 +21,11 @@ class DataBase {
             return doc.data();
         }
     }        
+
+    public async updateDoc(email: any, ...data: any): Promise<any> {
+        let userDoc = db.collection(this.collectionName).doc(email);
+        let doc = await userDoc.set(data);
+    }
 };
 
 export default DataBase;
